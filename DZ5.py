@@ -1,20 +1,21 @@
 # вводим число с клавиатуры
-lst = list(input('Ввидите число:'))
+lst = list(input('Ввод данных:'))
 lst2 = list('lst')
 # Количество элементов в списке
 n = len(lst)
 print(lst)
-print(len(lst))
-if n % 2 == 0:
-    c = lst[n // 2:]
-    b = lst[:n // 2]
-    print("четное"+ str(b)+ str(c) )
+print("Колличество элиментов в списке",len(lst))
+if n % 2 == 0 :
+
+    b = [lst[: n // 2], lst[n // 2:]]
+    print("четное")
+    print(str(b) )
 
 else:
 
-    b = lst[n // 2:]
-    c = lst[:n // 2]
+    c = [lst[: n // 2 + 1 ], lst[n // 2 +1:]]
 
-    print("не четное"+ str(b)+ str(c))
+    print("не четное")
+    print(str(c))
 
 
